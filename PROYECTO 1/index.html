@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inversión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1 class="form-title">Invierte con Propósito</h1>
+        <form id="investmentForm">
+            <label for="name">Nombres y Apellidos:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Número de Celular:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <!-- Inicial de inversión -->
+            <label for="initialInvestment">¿Tienes una inicial de S/ 10,000 para invertir?</label>
+            <select id="initialInvestment" name="initialInvestment" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+
+            <!-- Tipo de búsqueda -->
+            <label for="investmentType">¿Estás buscando para invertir o vivienda?</label>
+            <select id="investmentType" name="investmentType" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="inversion">Inversión</option>
+                <option value="vivienda">Vivienda</option>
+                <option value="ambos">Ambos</option>
+            </select>
+
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Mensaje de confirmación -->
+    <div id="confirmationMessage" class="confirmation-message">
+        <h2>¡Tus datos fueron enviados con éxito!</h2>
+        <p>En breve nos estaremos comunicando contigo.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+body {
+    background-color: #FAE3E0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px; /* Añadido para evitar desbordes en móviles */
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid #C69890;
+    border-radius: 8px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #C69890;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #C69890;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#mensaje {
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+/* Responsive: mejora para pantallas pequeñas */
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    select,
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

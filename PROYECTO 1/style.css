@@ -1,0 +1,95 @@
+/* Estilo general del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* Título del formulario */
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    color: #008f72;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilo del contenedor del formulario */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+/* Estilo de los labels */
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Estilo de los inputs y selects */
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Estilo del botón */
+button {
+    background-color: #008f72;  /* Color de fondo */
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+button:hover {
+    background-color: #006e55;  /* Un verde más oscuro */
+}
+
+/* Estilo del mensaje de confirmación */
+.confirmation-message {
+    display: none;  /* Inicialmente oculto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.confirmation-message h2 {
+    color: #008f72;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.confirmation-message p {
+    font-size: 18px;
+    color: #333;
+}
